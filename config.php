@@ -1,7 +1,7 @@
 <?php
     $servidor = "localhost";
     $usuario = "root";
-    $senha = "";
+    $senha = "Aluno1234";
     $db = "livraria";
 
     try {

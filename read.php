@@ -39,13 +39,20 @@
                     <td>{$autor}</td>
                     <td>{$editora}</td>
                     <td>
-                        <a href='update.php?id={$id}' style='text-decoration: none;'><button><b>Editar</b></button></a> 
+                        <a href='update.php?id={$id}' style='text-decoration: none; color: blue; margin-right: 8px;'>Editar</a>
+                        <a href='delete.php?id={$id}' onclick=\"return confirm('Tem certeza que deseja excluir este livro?')\" style='text-decoration: none; color: red;'>Excluir</a>
                     </td>
                 </tr>
             ";
         }
 
-        echo "</table>";
+        echo "</table>
+            <p>
+                <button type='button' onclick=\"location.href='index.php'\">Voltar</button>
+            </p>
+        ";
     ?>
+
+    
 </body>
 </html>
